@@ -1,0 +1,4 @@
+app.o
+main.c
+*.so
+build/
