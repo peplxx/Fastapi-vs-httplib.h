@@ -15,6 +15,8 @@ This repository provides a simple testing stand for comparing the performance of
 - **Python Server**: Using `FastAPI` and `Uvicorn`.  
 - **Cython Server**: The same Python server compiled into a Cython module for performance comparison.
 
+> Note: All servers are configured to work on port 8080.
+
 ## Requirements
 
 - [Make](https://www.gnu.org/software/make/)
