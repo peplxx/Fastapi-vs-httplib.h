@@ -1,3 +1,4 @@
 # Exclude build files
 main
 *.o
+httplib.h
