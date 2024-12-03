@@ -21,6 +21,7 @@ run: ##@Run Run compiled application
 	PYTHONPATH=`pwd` ./app.o
 
 clean: ##@Build Clean up
-	rm -f $(EXTENSION_MODULE).c $(EXTENSION_MODULE).so
+	rm -f $(EXTENSION_MODULE).c
+	rm -f $(EXTENSION_MODULE).o
 	rm -f app.o
 	rm -rf build
