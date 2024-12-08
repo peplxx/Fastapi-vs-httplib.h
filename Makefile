@@ -30,7 +30,7 @@ cy-build: ##@Cython Build server's source
 cy-run: ##@Cython Run server
 	$(MAKE) -C cython-server run
     
-cy-serve: build-cython ##@Cython Build & Run server
+cy-serve: cy-build ##@Cython Build & Run server
 	$(MAKE) -C cython-server run
 
 cy-clean: ##@Cython Clean build files
@@ -44,7 +44,7 @@ cpp-build: ##@Cpp Build server's source
 cpp-run: ##@Cpp Run server
 	$(MAKE) -C cpp-server run
 
-cpp-serve: build-cpp ##@Cpp Build & Run server
+cpp-serve: cpp-build ##@Cpp Build & Run server
 	$(MAKE) -C cpp-server run
 
 cpp-clean: ##@Cpp Clean build files
